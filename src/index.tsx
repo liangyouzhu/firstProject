@@ -11,7 +11,7 @@ function formatName(user: any) {
 }
 const link = <a href="https://baidu.com">React</a>;
 const user = {  firstName: 'Harper',  lastName: 'Perez'};
-const element = <h1>Hello, world!{formatName(user)}</h1>;
+const element = <h1>Hello, world !{formatName(user)}</h1>;
 
 root.render(
 <div>
