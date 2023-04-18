@@ -5,9 +5,19 @@ import ReactDOM from 'react-dom/client';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+function formatName(user: any) {
+  return user.firstName + ' ' + user.lastName;
+}
+const link = <a href="https://baidu.com">React</a>;
+const user = {  firstName: 'Harper',  lastName: 'Perez'};
+const element = <h1>Hello, world!{formatName(user)}</h1>;
+
 root.render(
 <div>
-    hello world
+{link}
+    <h1>Hello, world!{element}</h1>
+    <h2>It is {new Date().toLocaleTimeString()}.</h2>
 </div>
 );
 
