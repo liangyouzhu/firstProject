@@ -16,7 +16,7 @@ const element = <h1>Hello, world!{formatName(user)}</h1>;
 root.render(
 <div>
 {link}
-    <h1>Hello, world!{element}</h1>
+    <h1>Hello, world!!{element}</h1>
     <h2>It is {new Date().toLocaleTimeString()}.</h2>
 </div>
 );
